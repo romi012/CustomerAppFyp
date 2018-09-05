@@ -1,0 +1,137 @@
+
+<ion-content class="backgroundpicture">
+
+  <ion-card  class="hide-lg hide-md">
+    <ion-grid>
+
+
+    <!--<ion-card-content>-->
+  <form [formGroup]="loginForm" (submit)="loginUser()" novalidate>
+
+
+    <ion-row>
+      <ion-col class="hide-xs hide-sm" col-md-4 col-lg-4></ion-col>
+      <ion-col col-12 col-sm-10 col-md-6 col-lg-6 col-xl-3>
+        <ion-item>
+
+          <img src="assets/imgs/R2R.jpg" style=" border-radius: 25px;">
+        </ion-item>
+      </ion-col>
+      <ion-col class="hide-xs hide-sm" col-md-4 col-lg-4></ion-col>
+    </ion-row>
+        <ion-row class="pad">
+          <ion-col class="hide-xs hide-sm" col-md-4 col-lg-4></ion-col>
+          <ion-col col-12 col-sm-10 col-md-6 col-lg-6 col-xl-3>
+            <ion-item class="div1">
+              <ion-label style="color:#4d004d" fixed >Emailaddress</ion-label>
+              <ion-input formControlName="email" type="email" placeholder="" #emaill
+                         [class.invalid]="!loginForm.controls.email.valid && blur" style="color: black" >
+              </ion-input>
+            </ion-item>
+
+            <ion-item class="error-message" *ngIf="!loginForm.controls.email.valid &&
+     loginForm.controls.email.dirty">
+              <p>Please enter a valid email address.</p>
+
+            </ion-item>
+
+
+          </ion-col>
+          <ion-col class="hide-xs hide-sm" col-md-4 col-lg-4></ion-col>
+        </ion-row>
+
+
+    <ion-row  class="pad" align-items-start>
+      <ion-col class="hide-xs hide-sm" col-md-4 col-lg-4></ion-col>
+      <ion-col col-12 col-sm-9 col-md-4 col-lg-4 col-xl-3 style="border-top: 1px solid purple;color:#4d004d">
+
+      <ion-item>
+        <ion-label style="color:#4d004d" fixed>Password</ion-label>
+          <ion-input formControlName="password" type="password" placeholder=""
+                     [class.invalid]="!loginForm.controls.password.valid && blur">
+          </ion-input>
+        </ion-item>
+
+        <ion-item class="error-message" *ngIf="!loginForm.controls.password.valid
+    && loginForm.controls.password.dirty">
+          <p>Your password needs more than 6 characters.</p>
+        </ion-item>
+
+
+      </ion-col>
+      <ion-col class="hide-xs hide-sm" col-md-4 col-lg-4></ion-col>
+
+    </ion-row>
+
+    <ion-row align-items-start>
+      <ion-col class="hide-xs hide-sm" col-md-4 col-lg-4></ion-col>
+      <ion-col col-12 col-sm-9 col-md-6 col-lg-4 col-xl-3 align="center" style="border-top: 1px solid purple;">
+
+        <button  ion-button block color="twitter" type="submit"  [disabled]="!loginForm.valid" >
+          Sign In
+        </button>
+
+
+      </ion-col>
+      <ion-col class="hide-xs hide-sm" col-md-4 col-lg-4></ion-col>
+    </ion-row>
+
+
+    <ion-row align-items-start>
+      <ion-col class="hide-xs hide-sm" col-md-4 col-lg-4></ion-col>
+      <ion-col col-12 col-sm-9 col-md-6 col-lg-4 col-xl-3 align="center">
+        <div text-center text-uppercase >
+          <a href="#" style=" color: #4d004d;" (click)="goToResetPassword()"><b>Forgot password?</b></a>
+          <hr class="hr-text" data-content="OR">
+          <button ion-button block color="secondary" (click)="goToSignup()">Create new account</button>
+        </div>
+      </ion-col>
+      <ion-col class="hide-xs hide-sm" col-md-4 col-lg-4></ion-col>
+    </ion-row>
+
+
+
+
+
+
+    <ion-row align-items-start style="margin-left: 10px">
+      <ion-col></ion-col>
+      <ion-col col-auto>
+<ion-item>
+  <ion-grid>
+    <ion-row align-items-start>
+      <ion-col col-auto>
+        <button ion-button icon-left block clear (click)="loginWithGoogle()">
+          <ion-icon name="logo-google" class="col"></ion-icon>
+        </button>
+      </ion-col>
+      <ion-col col-auto>
+        <button ion-button icon-left block clear (click)="loginWithGoogle()">
+          <ion-icon name="logo-facebook" class="colf"></ion-icon>
+        </button>
+      </ion-col>
+      <ion-col col-auto>
+        <button ion-button icon-left block clear (click)="loginWithGoogle()">
+          <ion-icon name="logo-twitter" class="colt"></ion-icon>
+        </button>
+      </ion-col>
+    </ion-row>
+  </ion-grid>
+</ion-item>
+
+
+      </ion-col>
+      <ion-col></ion-col>
+    </ion-row>
+
+
+  </form>
+
+    <!--</ion-card-content>-->
+
+    </ion-grid>
+  </ion-card>
+
+
+</ion-content>
+

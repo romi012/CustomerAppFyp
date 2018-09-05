@@ -1,0 +1,121 @@
+<ion-header>
+  <ion-navbar color="color3">
+
+    <button ion-button icon-only menuToggle start>
+      <ion-icon name="menu"></ion-icon>
+    </button>
+    <ion-title color="color4"> Report To Resolve</ion-title>
+    <!--<ion-buttons end>-->
+      <!--<button ion-button icon-only (click)="logOut()">-->
+        <!--<ion-icon name="log-out"></ion-icon>-->
+      <!--</button>-->
+    <!--</ion-buttons>-->
+
+    <ion-buttons end>
+      <button ion-button tappable (click)="presentNotifications($event)">
+        <ion-icon name="notifications"></ion-icon>
+      </button>
+      <button ion-button tappable (click)="goToAccount()">
+        <ion-icon name="cog"></ion-icon>
+      </button>
+    </ion-buttons>
+
+
+  </ion-navbar>
+</ion-header>
+
+
+<ion-content  padding>
+<ion-grid>
+  <ion-row align-items-start>
+    <ion-col col-md-4 col-lg-3>
+
+    </ion-col>
+
+    <ion-col col-md-4 col-lg-3>
+         <ion-item style="margin: auto">
+
+             <ion-img src="assets/imgs/icon3.png" class="register" style="width: 100px;height: 100px"></ion-img>
+
+           <br>
+           <p align="center">Home</p></ion-item>
+       </ion-col>
+    <ion-col col-md-4 col-lg-3>
+      <ion-item>
+        <a (click)="goToProfile()">
+        <ion-img src="assets/imgs/profile.png" class="register" style="width: 100px;height: 100px"></ion-img>
+        </a>
+        <br>
+        <p align="center">Profile</p>
+      </ion-item>
+    </ion-col>
+    <ion-col col-md-4 col-lg-3>
+
+    </ion-col>
+  </ion-row>
+
+  <ion-row align-items-start>
+    <ion-col col-md-4 col-lg-3></ion-col>
+
+    <ion-col col-md-4 col-lg-3>
+      <ion-item style="margin: auto">
+        <a (click)="goToCreate()">
+        <ion-img src="assets/imgs/registration.png" class="register" style="width: 100px;height: 100px;"></ion-img>
+        </a>
+        <br>
+        <p align="center">Register </p>
+      </ion-item>
+
+    </ion-col>
+
+    <ion-col col-md-4 col-lg-3>
+      <ion-item>
+        <a  (click)="goToList()">
+          <ion-img src="assets/imgs/images.png" class="register" style="width: 100px;height: 100px"></ion-img>
+        </a>
+        <br>
+        <p align="center">Reports</p>
+      </ion-item>
+    </ion-col>
+    <ion-col col-md-4 col-lg-3></ion-col>
+
+  </ion-row>
+
+
+
+
+
+  <ion-row align-items-start>
+    <ion-col col-md-4 col-lg-3>
+
+    </ion-col>
+    <ion-col col-md-4 col-lg-3>
+      <ion-item style="margin: auto">
+        <a (click)="goToPublic()" >
+          <ion-img src="assets/imgs/people.png" class="register" style="width: 100px;height: 100px"></ion-img>
+        </a>
+        <br>
+        <p align="center">Public Reports</p>
+      </ion-item>
+    </ion-col>
+    <ion-col col-md-4 col-lg-3>
+      <ion-item>
+        <a href="#" >
+          <ion-img src="assets/imgs/faqs.png" class="register" style="width: 100px;height: 100px"></ion-img>
+        </a>
+        <br>
+        <p align="center">FAQs</p>
+
+      </ion-item>
+    </ion-col>
+
+    <ion-col col-md-4 col-lg-3>
+
+    </ion-col>
+  </ion-row></ion-grid>
+
+
+</ion-content>
+
+
+

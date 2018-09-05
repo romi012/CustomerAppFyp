@@ -1,0 +1,63 @@
+page-home {
+
+
+
+
+  .backgroundpicture{
+    background-image: url('../../assets/imgs/bg.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+
+  }
+
+
+  ion-title{
+    text-align: center;
+  }
+
+  .item{
+
+
+    background-color: white;
+    border: 1px solid purple;
+    width: 140px;
+    height: 140px;
+
+  }
+
+  .register{
+    font-size: 100px;
+    color: darkmagenta;
+    //margin-left: 50px;
+    //margin-top: 20px;
+
+  }
+
+  .newicon{
+    font-size: 100px;
+    color: darkmagenta;
+
+
+  }
+
+
+
+
+  .logo{
+    font-size: 100px;
+
+
+  }
+
+  ion-row.col:hover a {
+    background-color: darkgrey;
+  }
+
+  .top
+  {
+    margin-top: 1%;
+  }
+
+
+}
+

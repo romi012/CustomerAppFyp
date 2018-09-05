@@ -1,0 +1,105 @@
+page-event-create {
+
+
+
+  .backgroundpicture{
+    background-image: url('../../assets/imgs/download.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+  }
+  .ico{
+    background-image: url("../../assets/imgs/johny.png");
+    background-repeat: no-repeat;
+    padding-bottom: 300px;
+    margin-left: 800px;
+
+
+
+
+  }
+
+  ion-card.card {
+    box-shadow: none;
+    border: solid;
+    border-color: purple;
+    //background: rgba(0, 0, 0, 0.5);
+    border-radius: 5px;
+    width: 70%;
+    align-content: center;
+    align-items: center;
+    margin-left: 15%;
+    margin-top: 10%;
+  }
+
+  .item {
+    margin-bottom: 10px;
+    background: rgba(255, 255, 255, 0.5);
+    border: medium none;
+
+
+    .label{
+      color: black;
+    }
+    .text-input{
+      color: black;
+    }
+
+    input::-moz-placeholder  {
+      color: #fff!important;
+    }
+
+    input:-moz-placeholder {
+      color: #fff!important;
+    }
+
+    *::-webkit-input-placeholder  {
+      color: darkmagenta!important;
+    }
+
+    *:-ms-input-placeholder  {
+      color: #fff!important;
+    }
+
+    *:-moz-placeholder  {
+      color: #fff!important;
+    }
+  }
+
+
+
+
+  .logo{
+    font-size: 100px;
+    //margin-left: 40%;
+    //padding-right: 50%;
+    //padding-top:15% ;
+
+  }
+
+  ion-row.col:hover a {
+    background-color: darkgrey;
+  }
+
+  .top
+  {
+    margin-top: 10%;
+  }
+
+  .list{
+    font-size: 100px;
+
+    color: darkmagenta;
+  }
+
+  .profile{
+    font-size: 100px;
+    color: darkmagenta;
+
+  }
+
+  .colour
+  {
+    background-color: darkmagenta;
+
+  }
+}

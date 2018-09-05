@@ -1,0 +1,47 @@
+page-event-list {
+
+
+  p{
+    text-align: left;
+  }
+
+  .backgroundpicture{
+    background-image: url('../../assets/imgs/download.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+
+
+
+  }
+ion-segment-button{
+  color: darkmagenta;
+
+
+}
+
+  .item {
+    margin-bottom: 10px;
+    //background: rgba(255, 255, 255, 0.5);
+    border: medium none;
+
+
+
+
+
+  }
+
+
+
+  ion-card.card {
+    box-shadow: none;
+    border: solid;
+    border-color: purple;
+    //background: rgba(0, 0, 0, 0.5);
+    border-radius: 5px;
+    width: 70%;
+    align-content: left;
+    align-items: left;
+    margin-left: 15%;
+    margin-top: 10%;
+  }
+}

@@ -1,0 +1,85 @@
+<ion-header>
+  <ion-navbar color="color3">
+    <button ion-button icon-only menuToggle start>
+      <ion-icon name="menu"></ion-icon>
+    </button>
+    <ion-title>Register Complaint</ion-title>
+    <!--<ion-buttons end>-->
+    <!--<button ion-button icon-only (click)="logOut()">-->
+    <!--<ion-icon name="log-out"></ion-icon>-->
+    <!--</button>-->
+    <!--</ion-buttons>-->
+
+    <ion-buttons end>
+      <button ion-button tappable (click)="presentNotifications($event)">
+        <ion-icon name="notifications"></ion-icon>
+      </button>
+      <button ion-button tappable (click)="goToAccount()">
+        <ion-icon name="cog"></ion-icon>
+      </button>
+    </ion-buttons>
+
+
+  </ion-navbar>
+</ion-header>
+
+<ion-content padding>
+<ion-card>
+  <ion-grid>
+
+    <ion-row align-items-start>
+      <ion-col></ion-col>
+      <ion-col col-auto>
+
+        <ion-item>
+          <ion-label color="color3" stacked>Complaint</ion-label>
+          <ion-input  [(ngModel)]="text.ComplaintName" type="text" placeholder="What's your complaint?">
+          </ion-input>
+        </ion-item>
+        <hr>
+      </ion-col>
+      <ion-col></ion-col>
+    </ion-row>
+
+
+
+    <!--<ion-row align-items-start>-->
+      <!--<ion-col></ion-col>-->
+      <!--<ion-col col-auto>-->
+
+        <!--<ion-item>-->
+          <!--<ion-label>Complaint Date</ion-label>-->
+          <!--<ion-datetime displayFormat="D MMM, YY" pickerFormat="DD MMM YYYY" [(ngModel)]="text.eventDate">-->
+          <!--</ion-datetime>-->
+        <!--</ion-item>-->
+      <!--</ion-col>-->
+      <!--<ion-col></ion-col>-->
+    <!--</ion-row>-->
+
+
+
+  <ion-row align-items-start>
+    <ion-col></ion-col>
+    <ion-col col-auto>
+
+      <button ion-button block class="colour" (click)="sendTextMessage(text);createEvent(text);createComp(text)">
+        Submit
+      </button>
+    </ion-col>
+    <ion-col></ion-col>
+  </ion-row>
+  </ion-grid>
+
+</ion-card>
+
+  <!--
+    <ion-item>
+      <ion-label stacked>Cost</ion-label>
+      <ion-input [(ngModel)]="eventCost" type="number" placeholder="How much are you spending?">
+      </ion-input>
+    </ion-item>-->
+
+
+
+
+</ion-content>

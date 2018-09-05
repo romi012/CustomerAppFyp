@@ -1,0 +1,204 @@
+//page-login {
+//  form {
+//    margin-bottom: 32px;
+//    button {
+//      margin-top: 20px !important;
+//    }
+//  }
+//
+//  p {
+//    font-size: 0.8em;
+//    color: #d2d2d2;
+//  }
+//
+//  ion-label {
+//    margin-left: 5px;
+//  }
+//
+//  ion-input {
+//    padding: 5px;
+//  }
+//
+//  .invalid {
+//    border-bottom: 1px solid #ff6153;
+//  }
+//
+//  .error-message {
+//    min-height: 2.2rem;
+//    p {
+//      font-size: 60%;
+//    }
+//    ion-label {
+//      margin: 2px 0;
+//    }
+//    .item-inner {
+//      border-bottom: 0 !important;
+//    }
+//  }
+//}
+
+
+
+
+
+page-login {
+  .backgroundpicture{
+   // background-image: url('../../assets/imgs/bg.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+
+  }
+  @media screen and (max-width: 700px) {
+    .background {
+      background-image: none;
+    }
+  }
+
+  .pad {
+    margin:-5px;
+  }
+
+  ion-card.card {
+    box-shadow: none;
+    background-color: white;
+    background: rgba(0, 0, 0, 0);
+    border-radius: 5px;
+    align-content: center;
+    align-items: center;
+
+
+  }
+
+  .hr-text {
+    line-height: 1em;
+    position: relative;
+    outline: 0;
+    border: 0;
+    color: black;
+    text-align: center;
+    height: 1.5em;
+    opacity: .5;
+    &:before {
+      content: '';
+      // use the linear-gradient for the fading effect
+      // use a solid background color for a solid bar
+      background: linear-gradient(to right, transparent, #818078, transparent);
+      position: absolute;
+      left: 0;
+      top: 50%;
+      width: 100%;
+      height: 1px;
+    }
+    &:after {
+      content: attr(data-content);
+      position: relative;
+      display: inline-block;
+      color: black;
+
+      padding: 0 .5em;
+      line-height: 1.5em;
+      // this is really the only tricky part, you need to specify the background color of the container element...
+      color: #818078;
+      background-color: #fcfcfa;
+    }
+  }
+
+  .colour{
+
+    background-color: darkmagenta;
+  }
+  //.scroll-content {
+  //  align-content: center;
+  //  display: inline-flex;
+  //  flex-direction: column;
+  //  justify-content: center;
+  //  text-align: center;
+  // margin-top: 150px;
+  //}
+
+
+
+  .col{
+    color: red;
+    size: 150px;
+
+  }
+  .colf{
+    color: navy;
+    size: 700px;
+  }
+  .colt{
+    color: #007aff;
+    size: 700px;
+  }
+
+
+
+
+
+  a, p,
+  ion-card-header.card-header {
+    color:  #4d4d4d!important;
+    text-align: center;
+  }
+
+  .list > .item-block:first-child {
+    border: medium none;
+
+  }
+
+  .item {
+    margin-bottom: 10px;
+    background: rgba(255, 255, 255, 0.5);
+    border: medium none;
+
+    .label{
+      color: darkslategrey;
+    }
+    .text-input{
+      color: #4d004d
+    }
+
+    input::-moz-placeholder  {
+      color:  #4d4d4d!important;
+    }
+
+    input:-moz-placeholder {
+      color:  #4d4d4d!important;
+    }
+
+    *::-webkit-input-placeholder  {
+      color: darkmagenta!important;
+    }
+
+    *:-ms-input-placeholder  {
+      color:  #4d4d4d!important;
+    }
+
+    *:-moz-placeholder  {
+      color:  #4d4d4d!important;
+    }
+  }
+
+  .icon {
+    padding-right: 10px;
+  }
+
+  .bottom {
+    position: absolute;
+    bottom: 0;
+  }
+  .error-message {
+    color: #4d4d4d;
+    min-height: 2.2rem;
+    p {
+      font-size: 60%;
+    }
+    ion-label {
+      margin: 2px 0;
+    }
+    .item-inner {
+      border-bottom: 0 !important;
+    }
+  }
+}
